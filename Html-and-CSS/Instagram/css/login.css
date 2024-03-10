@@ -1,0 +1,237 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    transition: 0.5s;
+}
+
+:root {
+    --lightgray: rgb(250, 250, 250);
+    --blue: #4CB5F9;
+    --font-family-segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: "cookie";
+    src: url(../font/Cookie/Cookie-Regular.ttf);
+}
+
+.name {
+    /* lobster */
+    /* satisfy */
+    /* great vibes */
+    /* Kaushan Script */
+    /* cookie  */
+    font-family: cookie;
+    font-size: 38pt;
+    font-weight: normal;
+}
+
+.inner-form1 .name a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    min-height: 100Vh;
+    min-width: 100Vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+main {
+    width: 875px;
+    padding: 40px 0px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-container {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.image-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.image-side img:nth-child(1) {
+    height: 630px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+.image-side img:nth-child(2) {
+    height: 530px;
+    width: 60%;
+    position: absolute;
+    object-fit: contain;
+    top: 30px;
+    left: 135px;
+    /* border: 2px solid red; */
+}
+
+.form-side {
+    width: 50%;
+    height: auto;
+}
+
+.form-side form {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-side form input {
+    width: 75%;
+    height: 35px;
+    outline: none;
+    border: 1.5px solid lightgray;
+    padding: 0px 5px;
+    border-radius: 3px;
+    background-color: var(--lightgray);
+    box-shadow: 0px 0px 5px var(--lightgray);
+    font-size: 9pt;
+    font-family: var(--font-family-segoe);
+    text-overflow: ellipsis;
+
+}
+
+.form-side form input[type="button"] {
+    padding: 0px;
+    width: 78%;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--blue);
+    color: white;
+    font-size: 10pt;
+    cursor: pointer;
+    font-family: var(--font-family-segoe);
+}
+
+.inner-form1 {
+    height: 350px;
+    flex-direction: column;
+    justify-content: space-around !important;
+    gap: 10px;
+}
+
+.inner-form1,
+.inner-form2 {
+    border: 1px solid lightgray;
+    padding: 20px 0px;
+}
+
+.inner-form1,
+.inner-form2,
+.inner-form3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-segoe);
+}
+
+.inner-form2 h4,
+.inner-form3 h4 {
+    font-weight: normal;
+    font-size: 11pt;
+}
+
+.inner-form2 h4 a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.inner-form1 .line-main {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: gray;
+    font-size: 10pt;
+    font-family: var(--font-family-segoe);
+}
+
+.inner-form1 .line-main .line {
+    height: 0.5px;
+    width: 40%;
+    background-color: lightgray;
+}
+
+.inner-form1 .span-1 h4 a {
+    font-weight: normal;
+    text-decoration: none;
+    font-family: var(--font-family-segoe);
+}
+
+.inner-form1 .span-2 h4 a {
+    text-decoration: none;
+    color: black;
+    font-size: 10pt;
+    font-weight: normal;
+    font-family: var(--font-family-segoe);
+}
+
+.inner-form3 {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inner-form3 img {
+    height: 40px;
+    width: 120px;
+    object-fit: fill;
+}
+
+
+
+/* footer start */
+footer {
+    width: 875px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer ul li,
+footer span {
+    display: inline;
+    padding: 0px 5px;
+    font-size: 10pt;
+}
+
+/* footer end*/

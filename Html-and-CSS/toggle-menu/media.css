@@ -1,0 +1,42 @@
+@media (max-width:490px) {
+    .side-menu {
+        width: 100vw;
+        height: 0px;
+        overflow: hidden;
+        z-index: 1;
+        transition: all 0.3s;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        background-color: black;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .open-button,
+    .close-button {
+        display: block;
+        cursor: pointer;
+    }
+    .close-button {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        background-color: transparent;
+        padding: 10px;
+        border: none;
+        outline: none;
+        color: white;
+        border: 2px solid white;
+    }
+    .side-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .side-menu ul li a{
+        color: white;
+        font-size: 12pt;
+    }
+    
+}

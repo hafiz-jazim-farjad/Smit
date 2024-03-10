@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(rgb(235, 197, 107), rgb(248, 163, 163));
+    background-repeat: no-repeat;
+    overflow: visible;
+    width: auto;
+    height: auto;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+form {
+    max-width: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+input,
+select {
+    text-align: center;
+    width: 240px;
+    padding: 10px 0px;
+    border: 0px;
+    border-bottom: solid black 1.5px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    outline: 0px;
+}
+
+input[type=radio] , input[type=checkbox]  {
+    height: 15px;
+    width: 15px;
+}

@@ -1,0 +1,52 @@
+<!-- for download div as an image and it's working  -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+</head>
+
+<body>
+    <div id="html-content-holder"
+        style="background-color: #F0F0F1; color: #00cc65; width:400px; height: 200px; padding: 20px;">
+
+        <h2> <strong> Jazim </strong></h2>
+        <hr>
+        <h3 style="color: #3e4b51;">
+            Download Div as an image in png formate.
+        </h3>
+        <p style="color: #3e4b51;"> This is demo paragraph </p>
+    </div>
+    <input download="download.png" id="btn-Preview-Image" type="button" value="Download">
+    <br>
+
+
+    <script>
+        $(document).ready(function () {
+
+
+            var element = $("#html-content-holder"); // global variable
+            var getCanvas; // global variable
+            var newData;
+
+            $("#btn-Preview-Image").on('click', function () {
+                html2canvas(element, {
+                    onrendered: function (canvas) {
+                        getCanvas = canvas;
+                        var imgageData = getCanvas.toDataURL("image/png");
+                        var a = document.createElement("a");
+                        a.href = imgageData; //Image Base64 Goes here
+                        a.download = "Image.png"; //File name Here
+                        a.click(); //Downloaded file
+                    }
+                });
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

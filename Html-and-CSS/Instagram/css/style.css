@@ -1,0 +1,465 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+
+    /* black  */
+    --black: black;
+    /* white */
+    --white: white;
+    /* blue  */
+    --blue: #1976D2;
+    /* lightgray */
+    --lightgray: #818181;
+    /* light gray border color  */
+    --border-color: #363636;
+    /* hover background color  */
+    --hover-color: rgba(255, 255, 255, .1);
+    /* font family  */
+    --normal-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* scroll bar  */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* scroll bar Handle */
+body::-webkit-scrollbar-thumb {
+    background: rgb(36, 36, 36);
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@font-face {
+    font-family: cookie;
+    src: url(../font/Cookie/Cookie-Regular.ttf);
+}
+
+body {
+    background-color: var(--black);
+    overflow-x: hidden;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+main {
+    width: 100vw;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.main-container {
+    width: inherit;
+    min-width: auto;
+    /* max-width: 1600px; */
+    min-height: inherit;
+    flex-direction: row;
+    position: relative;
+    align-items: start !important;
+    justify-content: end !important;
+    overflow-x: hidden;
+}
+
+.top-bar{
+    display: none;
+}
+
+/* left side start */
+
+.left-side {
+    min-width: 250px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-right: 1px solid var(--border-color);
+    z-index: 2;
+    background-color: var(--black);
+}
+
+.left-side-1 {
+    min-width: calc(100% - 40px);
+    min-height: calc(100vh - 40px);
+    padding: 20px;
+    flex-direction: column !important;
+    align-items: start !important;
+    justify-content: space-around !important;
+}
+
+
+.left-side-1 .name {
+    font-family: cookie;
+    font-size: 25pt;
+}
+
+.name a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+#insta-icon {
+    display: none;
+}
+
+.left-side-1 ul li {
+    padding: 10px;
+    width: 180px;
+    border-radius: 10px;
+    font-family: var(--normal-font-family);
+}
+
+.left-side-1 ul li:hover {
+    background-color: var(--hover-color);
+}
+
+.left-side-1 ul li {
+    margin-top: 10px;
+}
+
+.left-side-1 ul li a {
+    color: var(--white);
+    font-size: 13pt;
+}
+
+.left-side-1 ul li a span {
+    padding-right: 10px;
+}
+
+.left-side-1 ul li a .icon {
+    font-size: 20px;
+
+}
+
+/* in menu reel wala icon as a image*/
+.reel-image img {
+    height: 16px;
+    width: 16px;
+    background-color: var(--white);
+    border-radius: 5px;
+    border: 2px solid var(--white);
+}
+
+.profile-image img {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+}
+
+/* left side end */
+
+/* center and right side parent div start */
+
+.center-and-right {
+    width: calc(100vw - 250px);
+    min-height: 100vh;
+    align-items: start !important;
+    padding: 25px 0px;
+    gap: 50px;
+}
+
+/* center and right side parent div end */
+
+/* center div start */
+
+.center {
+    width: 50%;
+    max-width: 650px;
+    min-width: 650px;
+    /* min-width: 35%; */
+    /* instagram ki trhan hojayegi yeh wali width zoom out pr  */
+    height: 2000px;
+    min-height: 100vh;
+    max-height: 2000px;
+}
+
+
+.center-1 {
+    width: 100%;
+    height: 100%;
+    justify-content: start !important;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stories {
+    gap: 10px;
+    width: 100%;
+    /* min-width: 650px; */
+    justify-content: space-around !important;
+}
+
+.story-circle {
+    min-height: 100px;
+    min-width: 70px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.story-circle img {
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    object-fit: fill;
+    padding: 2.5px;
+    /* background: rgb(131, 58, 180); */
+    background: linear-gradient(165deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.story-circle .caption1 {
+    font-size: 9pt;
+    font-family: var(--normal-font-family);
+}
+
+/* feed section start */
+.feeds {
+    height: auto;
+    max-width: 450px;
+    min-width: 250px;
+    align-items: start;
+}
+
+.inner-feed {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+.feed-top {
+    width: 100%;
+    height: 60px;
+    gap: 10px;
+    justify-content: start;
+}
+
+.feed-top img {
+    height: 40px;
+    width: 40px;
+    object-fit: fill;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+
+}
+
+.feed-top .name-and-audio p:nth-child(1) {
+    font-size: 12pt;
+    font-family: var(--normal-font-family);
+}
+
+.feed-top .name-and-audio p:nth-child(2) {
+    font-size: 9pt;
+    font-family: var(--normal-font-family);
+}
+
+.feed-bottom {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1.5px solid var(--border-color);
+}
+
+.feed-bottom .image {
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+    border: 2px solid var(--border-color);
+}
+
+.feed-bottom .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.feed-bottom .icons {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 18pt;
+}
+
+.feed-bottom .icons span {
+    gap: 20px;
+}
+
+.feed-bottom .like-comment-detial {
+    width: 100%;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.feed-bottom .like-comment-detial p {
+    width: 65%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.feed-bottom .like-comment-detial p button {
+    cursor: pointer;
+}
+
+.feed-bottom .like-comment-detial p button,
+.feed-bottom .like-comment-detial span input {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: var(--lightgray);
+
+}
+
+.feed-bottom .like-comment-detial span,
+.feed-bottom .like-comment-detial span input {
+    width: 100%;
+    min-height: 40px;
+}
+
+/* feed section end */
+
+/* center div end */
+
+/* right-side div start */
+
+.right-side {
+    width: 30%;
+    max-width: 300px;
+    min-height: 100vh;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+
+}
+
+.right-side-1 {
+    height: 60px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-side-1 .profile {
+    gap: 10px;
+}
+
+.right-side-1 .profile img {
+    height: 40px;
+    width: 40px;
+    object-fit: fill;
+    border-radius: 100%;
+}
+
+.profile .user-and-name p {
+    font-family: var(--normal-font-family);
+}
+
+.profile .user-and-name p:nth-child(1) {
+    font-size: 12pt;
+    color: white;
+}
+
+.profile .user-and-name p:nth-child(2) {
+    font-size: 9pt;
+    color: var(--lightgray);
+
+}
+
+.right-side-1 span button {
+    background: transparent;
+    border: none;
+    color: var(--blue);
+    font-family: var(--normal-font-family);
+    font-size: 9pt;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.right-side-1 span button:hover {
+    color: var(--white);
+}
+
+.suggest-and-button {
+    height: 40px;
+}
+
+.suggest-and-button span button {
+    color: var(--white);
+}
+
+.suggest-and-button span button:hover {
+    color: var(--lightgray);
+}
+
+.right-side-1 .suggest p {
+    font-family: var(--normal-font-family);
+    font-weight: 500;
+    font-size: 11pt;
+    color: var(--lightgray);
+}
+
+/* in right-side footer start  */
+
+.right-side-1 .footer {
+    width: 90%;
+    height: 150px;
+    flex-direction: column;
+    margin: auto 0px;
+    align-items: start !important;
+    gap: 20px;
+}
+
+.right-side-1 .footer ul {
+    justify-content: start !important;
+    flex-wrap: wrap;
+}
+
+.right-side-1 .footer ul li {
+    padding-right: 2.5px;
+}
+
+.right-side-1 .footer ul li::after {
+    content: ".";
+    color: var(--lightgray);
+    padding: 0px;
+    margin: 0px;
+}
+
+.right-side-1 .footer ul li:nth-child(10)::after,
+.right-side-1 .footer ul:nth-child(2) li::after {
+    content: "";
+}
+
+.right-side-1 .footer ul li a {
+    font-size: 9pt;
+    color: var(--lightgray);
+    text-transform: capitalize;
+    font-family: var(--normal-font-family);
+}
+
+/* in right-side footer end  */
+
+/* right-side div end */

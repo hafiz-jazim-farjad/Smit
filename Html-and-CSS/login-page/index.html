@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- aos (animation on scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fontawsom for icons  -->
+    <script src="https://kit.fontawesome.com/fafaf204e0.js" crossorigin="anonymous"></script>
+    <!-- w3school font icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- mine css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- mine responsive css -->
+    <link rel="stylesheet" href="responsive.css">
+    <title>Login Page</title>
+    <style>
+        ::selection{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return false">
+    <main>
+        <div class="main-container">
+            <div class="content-side" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+                <div class="overlay"></div>
+                <div class="content-child">
+                    <h3><span>Cloud</span> Collab</h3>
+                    <h1>Simplify your work</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis odit, aperiam eos eius velit
+                        suscipit possimus! Sed laborum, dolorum non adipisci voluptatem aspernatur ea iure alias, omnis
+                        possimus unde. Debitis.</p>
+                    <form action="" method="post">
+                        <input type="email" name="email" id="email" placeholder="Email Address" required>
+                        <br>
+                        <input type="submit" value="Next">
+                        <br>
+                        <p> Already have an account? <a href="#">Login</a> </p>
+                        <br>
+                        <div class="or">
+                            <div class="line"></div>
+                            <span>Or</span>
+                            <div class="line"></div>
+                        </div>
+                        <br>
+                        <button type="button" value="Sign in With Google"> <span class="fa-brands fa-google"></span>
+                            Sign in With Google </button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="image-side" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+                <img src="right-side-image.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

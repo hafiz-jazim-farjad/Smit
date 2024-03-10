@@ -1,0 +1,24 @@
+@media (max-width: 875px) {
+    main {
+        width: 100vw;
+    }
+
+    .image-side {
+        display: none;
+
+    }
+
+    .form-side {
+        width: 100vh;
+        min-width: 310px;
+        max-width: 437px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}

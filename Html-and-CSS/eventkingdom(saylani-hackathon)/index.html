@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fafaf204e0.js" crossorigin="anonymous"></script>
+
+    <title> Sylani Hackathon </title>
+</head>
+
+<body>
+    <header class="flex column">
+        <div class="navbar navbar1 flex">
+            <div class="left flex">
+                <!-- for mobile view start -->
+
+                <div class="main-header-mobile flex column">
+                    <span class="openbtn" id="openbtn" onclick="openbtn()"> ☰ </span>
+                    <div id="inner-header-mobile" class="inner-header-mobile flex column">
+                        <span class="closebtn" id="closebtn" onclick="closebtn()"> x </span>
+                        <form action="" class="mobile-form">
+                            <span class="search-box flex">
+                                <input type="search" name="search" id="search" placeholder="Search..." />
+                                <span type="submit"><i class="fa fa-search icon"></i>
+                                </span>
+                            </span>
+                        </form>
+                        <ul class="flex column">
+                            <hr>
+                            <li><a href="#">Corporate</a></li>
+                            <hr>
+                            <li><a href="#">Online Invitation</a></li>
+                            <hr>
+                            <li><a href="#">Online Cards</a></li>
+                            <hr>
+                            <li><a href="#">Paper Cards</a></li>
+                            <hr>
+                            <li><a href="#">Birthday / Anniversaries</a></li>
+                            <hr>
+                            <li><a href="#">Weddings</a></li>
+                            <hr>
+                            <li><a href="#">Holidays</a></li>
+                            <hr>
+                            <li><a href="#">Designers</a></li>
+                            <hr>
+                        </ul>
+                    </div>
+                </div>
+
+                <script>
+                    let inner_header = document.getElementById('inner-header-mobile');
+                    function openbtn() {
+                        inner_header.style.width = "100vw";
+                    }
+                    function closebtn() {
+                        inner_header.style.width = "0px";
+                    }
+                </script>
+
+
+                <!-- for laptop and desktop view  -->
+                <form action="" class="flex form2">
+                    <span class="search-box flex">
+                        <input type="search" name="search" id="search" placeholder="Search">
+                        <span class="fa fa-search icon"></span>
+                    </span>
+                    <span class="button">
+                        <button> Upload OWN </button>
+                    </span>
+                </form>
+            </div>
+            <div class="center flex">
+                <h2> <a href="#">EventKingdom</a> </h2>
+            </div>
+            <div class="right flex">
+                <ul>
+                    <li><a href="#">How To </a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar navbar2 flex">
+            <ul class="flex wrap">
+                <li><a href="#">Corporate</a></li>
+                <li><a href="#">Online Invitation</a></li>
+                <li><a href="#">Online Cards</a></li>
+                <li><a href="#">Paper Cards</a></li>
+                <li><a href="#">Birthday / Anniversaries</a></li>
+                <li><a href="#">Weddings</a></li>
+                <li><a href="#">Holidays</a></li>
+                <li><a href="#">Designers</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- hero section start -->
+
+    <main class="body flex column">
+        <div class="hero-section flex">
+            <div class="content">
+                <h1> VIRTUAL POST FOR EVENT PLANNING & INNOVATIVE MARKETING </h1>
+                <h5>Impress with beautiful, personal, animated & entertaining communication </h5>
+                <span> <a href="#"> CLICK HIER & ENJOY THE BERLINER PHILHARMONIKER DIGITAL CONCERT HALL SEASON PREVIEW
+                    </a> </span>
+                <span class="flex">
+                    <button>Send this card</button>
+                    <button>Fint Out More </button>
+                </span>
+            </div>
+        </div>
+    </main>
+    <footer class="flex">
+
+
+
+    </footer>
+</body>
+
+</html>

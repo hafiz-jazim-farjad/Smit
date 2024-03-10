@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Assignment </title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        ::selection{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return false">
+    <div>
+        <h2> This Form Made By Jazim </h2>
+        <form action="#" method="post">
+            <input type="text" name="first-name" id="first-name" autofocus placeholder="First Name">
+            <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+            <input type="email" name="email" id="email" placeholder="Email Address">
+            <input type="number" name="number" id="number" placeholder="Phone number">
+            <input type="date" name="date" id="date">
+            <input type="time" name="time" id="time">
+            <input type="file" name="file" id="file" placeholder="File">
+            <input type="range" name="range" id="range"> 
+            <p class="radio"> Select Your Age: &nbsp;
+                <label for="Under-18"> Under 18 </label>
+                <input type="radio" name="age" id="Under-18">
+                <label for="Under-30"> Under 30 </label>
+                <input type="radio" name="age" id="Under-30">
+                <label for="Under-50"> Under 50 </label>
+                <input type="radio" name="age" id="Under-50">
+            </p>
+            <p>  Select Your City: &nbsp;
+                <label for="Karachi"> Karachi </label>
+                <input type="checkbox" name="country" id="Karachi">
+        
+                <label for="Islamabad"> Islamabad </label>
+                <input type="checkbox" name="country" id="Islamabad">
+        
+                <label for="Lahore"> Lahore </label>
+                <input type="checkbox" name="country" id="Lahore">
+        
+            </p>
+            
+            <select name="select-city" id="select-city">
+                Select Your City
+                <option value="null" disabled selected> Please Select your city</option>
+                <option value="karachi">Karachi</option>
+                <option value="islamabad">Islamabad</option>
+                <option value="lahore">Lahore</option>
+                <option value="kpk">KPK</option>
+            </select>
+            
+            <input type="password" name="password" id="password" placeholder="Password">
+
+            <input type="submit" value="submit">
+        </form>
+</body>
+
+</html>

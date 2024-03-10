@@ -1,0 +1,61 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+main {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+main,
+.for-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.for-bg {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    object-fit: fill;
+    position: absolute;
+    z-index: -1;
+}
+
+.card {
+    border-radius: 10px;
+    transition: 0.5s;
+    width: 10vw;
+    transform: rotatey(180deg) scale(1);
+    filter: grayscale(1) blur(2px);
+}
+
+.card:hover {
+    filter: grayscale(0) blur(0px);
+    opacity: 1;
+    z-index: 1;
+    transition: 0.5s;
+    transform: rotatey(0deg) scale(2);
+}
+
+::selection {
+    background: black;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .card {
+        width: 20vw;
+    }
+}

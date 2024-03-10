@@ -1,0 +1,352 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    transition: 0.4s;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f9fafb;
+    overflow-x: hidden;
+
+}
+
+/* header section start  */
+
+header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px lightgray;
+    transition: all 0.4s;
+}
+
+.main-header {
+    min-height: 70px;
+    width: 85vw;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.main-header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-header div h1 a {
+    color: #624bff;
+    font-size: 18pt;
+    text-decoration: none;
+}
+
+.main-header div input {
+    height: 40px;
+    width: 220px;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: gray;
+    font-size: 12pt;
+
+    border: 1px solid lightgray;
+    transition: 0.1s;
+}
+
+.main-header div input::placeholder {
+    color: gray;
+    font-size: 11pt;
+}
+
+.main-header div input:focus {
+    outline: 5px solid #634bff52;
+}
+
+.main-header div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: row; */
+    gap: 20px;
+}
+
+.main-header div div span a {
+    color: black;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 12pt;
+}
+
+.main-header div span button {
+    cursor: pointer;
+    color: white;
+    font-size: 12pt;
+    background-color: #624bff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* header section end */
+
+
+/* body section start  */
+
+.body-section {
+    width: 1300px;
+    max-width: 1300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 50px;
+}
+
+/* slider section start */
+
+.slider {
+    width: inherit;
+    max-width: inherit;
+    height: auto;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    /* column-gap: 50px; */
+    background: url(sliderbg.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    box-shadow: 0px 0px 5px rgba(211, 211, 211, 0.581);
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    max-width: inherit;
+    min-height: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    column-gap: 50px;
+    transition: transform 0.5s;
+    animation-duration: normal;
+    animation: slide 15s linear infinite;
+}
+
+.slider .slide .image-side {
+    height: auto;
+    width: 40vw;
+}
+
+.slider .slide .image-side img {
+    /* height: 320px; */
+    height: auto;
+    width: 100%;
+    margin-bottom: -50px;
+}
+
+
+.slider .slide .content-side {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 60vw;
+    gap: 15px;
+    /* background-color: red; */
+}
+
+.slider .slide .content-side .text-1 {
+    color: black;
+    font-size: 24pt;
+}
+
+.slider .slide .content-side .text-2,
+.slider .slide .content-side .text-3 {
+    color: #637381;
+    font-size: 12pt;
+}
+
+.slider .slide .content-side button {
+    cursor: pointer;
+    color: white;
+    font-size: 12pt;
+    background-color: #624bff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+/* slider section end */
+
+/* latest auction heading */
+
+/* .latest-auction {
+    margin-bottom: 50px;
+} */
+
+.latest-auction h1 {
+    color: black;
+    padding-bottom: 10px;
+    border-bottom: 1px solid#624bff;
+}
+
+
+/* card section start */
+.cards {
+    height: auto;
+    min-width: auto;
+    width: 1300px;
+    max-width: 1300px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cards .child-card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 300px;
+    width: 265px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px lightgray;
+}
+
+.cards .child-card div img {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+}
+
+.cards .child-card div h1 {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.cards .child-card div p {
+    font-size: 11pt;
+    font-weight: normal;
+    color: #637381;
+}
+
+.cards .child-card div button {
+    cursor: pointer;
+    color: white;
+    font-size: 12pt;
+    background-color: #624bff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+/* footer section start  */
+
+
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    height: 300px;
+    background-color: #161c24;
+}
+
+.main-footer {
+    width: 100vw;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-footer h1 a {
+    color: #624bff;
+    text-decoration: none;
+    font-size: 22pt;
+}
+
+.main-footer ul li {
+    display: inline;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+}
+
+.footer-icon a svg {
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 7px;
+}
+
+.main-footer p {
+    color: #637381;
+}
+
+/* footer section end */
+
+
+
+
+/* for hover  */
+
+.child-card:hover .card-image {
+    transform: scale(1.1);
+}
+
+.child-card:hover {
+    box-shadow: inset 0px 0px 5px 5px #634bff96;
+}
+
+.child-card div h1:hover {
+    color: #624bff;
+}
+
+button:hover {
+    transform: scale(0.9);
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px black;
+}
+
+
+/* for hero animation  */
+
+/* #slide-1 , #slide-2 , #slide-3 {
+    display: none; 
+} */

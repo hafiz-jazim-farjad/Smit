@@ -1,0 +1,121 @@
+@media (max-width:1180px) {
+    .child-hero {
+        width: 50%;
+    }
+}
+
+@media (max-width:1000px) {
+    .second-container .box {
+        width: calc(100vw - 10vw);
+    }
+
+    .child-of-third-container {
+        min-width: calc(100% - 10%);
+        min-height: calc(100% - 7%);
+    }
+
+    .child-of-third-container h1 {
+        font-size: 25pt;
+        line-height: 35px;
+    }
+
+    .child-of-third-container .cards .inner-card h4 {
+        font-size: 15pt;
+    }
+
+    .inner-of-fourth-container {
+        width: calc(100% - 10%);
+
+    }
+}
+
+@media (max-width:950px) {
+    .child-hero {
+        width: 80%;
+    }
+}
+
+@media (max-width:767px) {
+    .hero-container {
+        align-items: start;
+        justify-content: start;
+        height: 450px;
+
+    }
+
+    .child-hero {
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);
+        padding: 30px 30px;
+    }
+
+    .child-hero h1 {
+        font-size: 30pt;
+    }
+
+    .child-hero p {
+        font-size: 16pt;
+    }
+
+    .child-hero button {
+        font-size: 14pt;
+        padding: 15px 25px;
+
+    }
+
+    .child-of-third-container .cards {
+        flex-direction: column;
+    }
+
+    .child-of-third-container .cards .inner-card {
+        width: 100%;
+    }
+
+    footer .upper-section {
+        flex-direction: column;
+    }
+
+    footer .upper-section .logo-side {
+        width: calc(100% - 10%);
+        height: 50px;
+        justify-content: start;
+    }
+
+    footer .upper-section .menu-side {
+        width: calc(100% - 10%);
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    footer .upper-section .menu-side ul {
+        margin-bottom: 50px;
+    }
+
+    footer .bottom-section {
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    footer .bottom-section .left {
+        width: calc(100% - 10%);
+    }
+
+    header {
+        width: calc(100% - 40px);
+        justify-content: space-between !important;
+        padding: 0px 20px;
+    }
+    header .logo , header .menu{
+        width: auto !important; 
+    }
+}
+
+@media (max-width:470px) {
+    footer {
+        height: auto;
+    }
+
+    footer .bottom-section {
+        min-height: 70px;
+    }
+}

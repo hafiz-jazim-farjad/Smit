@@ -1,0 +1,116 @@
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+#color-red {
+    color: red;
+    font-weight: bold;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body,
+.form1,
+.form2,
+.div-for-forms,
+.subcription-div,
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    width: calc(100vw - 20px);
+}
+
+.subcription-div {
+    width: calc(98vw - 20px);
+}
+
+
+.main-container,
+.div-for-forms {
+    flex-direction: column;
+}
+
+.div-for-forms {
+    width: calc(100% - 20px);
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgba(220, 220, 220, 0.197);
+    gap: 10px;
+    position: relative;
+}
+
+.form1,
+.form2 {
+    width: 50%;
+}
+
+.form2 {
+    background-color: rgb(201, 201, 201);
+    justify-content: start !important;
+}
+
+.right-item {
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    table tr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form,
+    table,
+    tr,
+    td {
+        min-width: 100%;
+    }
+
+    input,
+    select,
+    textarea,
+    .right-item {
+        width: 60%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .form1,
+    .form2 {
+        width: auto;
+    }
+
+}

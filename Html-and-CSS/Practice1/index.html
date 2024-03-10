@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Basic Form </title>
+    <style>
+        ::selection{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return false">
+    <form action="#" method="post">
+        <input type="email" name="email" id="email" required value="ahmed@gmail.com">
+        <ul>
+            <li>
+                <label for="city1"> Karachi </label>
+                <input type="radio" name="city" id="city1">
+            </li>
+            <li>
+                <label for="city2"> Islamabad </label>
+                <input type="radio" name="city" id="city2">
+            </li>
+            <li>
+                <label for="city3"> Lahore </label>
+                <input type="radio" name="city" id="city3">
+            </li>
+        </ul>
+        <label for="file">
+            <img src="https://cdn.pixabay.com/animation/2023/06/13/15/13/15-13-08-190_512.gif" height="80" alt="">
+            <input type="file" name="file" id="file">
+        </label>
+        <br> <br>
+
+        <label for="Karachi"> Karachi </label>
+        <input type="checkbox" name="country" id="Karachi">
+
+        <label for="Islamabad"> Islamabad </label>
+        <input type="checkbox" name="country" id="Islamabad">
+
+        <label for="Lahore"> Lahore </label>
+        <input type="checkbox" name="country" id="Lahore">
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>

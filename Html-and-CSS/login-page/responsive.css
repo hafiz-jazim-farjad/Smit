@@ -1,0 +1,62 @@
+* {
+    transition: 0.5s;
+}
+
+@media(max-width:1000px) {
+    .image-side {
+        display: none;
+    }
+
+    .content-side {
+        min-width: 100%;
+        min-height: 100%;
+        border-radius: 10px;
+        background-color: black;
+        background: url(right-side-image.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: black;
+        border-radius: 10px;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .content-child {
+        gap: 10px;
+        color: white;
+        z-index: 2;
+    }
+}
+
+@media (max-width:600px) {
+    .content-child {
+        width: 80%;
+        gap: 15px;
+    }
+
+    .content-side h3 {
+        font-size: 16pt;
+    }
+    
+    .content-side h1 {
+        font-size: 20pt;
+    }
+    
+    .content-side p {
+        font-size: 11pt;
+    }
+
+    .content-side .content-child form input,
+    .content-side .content-child form button {
+        height: 30px;
+        font-size: 9pt;
+    }
+}

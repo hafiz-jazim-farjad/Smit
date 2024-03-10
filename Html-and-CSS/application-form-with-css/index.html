@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Application Form </title>
+    <link rel="stylesheet" href="application-form-with-css.css">
+    <style>
+        ::selection {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return false">
+    <div class="main-container">
+        <h2> Application Form </h2>
+        <div class="div-for-forms">
+            <form action="#" method="post" class="form1">
+                <table class="table1">
+                    <tr>
+                        <td id="color-red">Personal Details</td>
+                    </tr>
+                    <tr>
+                        <td><label for="f-name"> First Name </label></td>
+                        <td><input type="text" name="f-name" id="f-name"></td>
+                        <td> <label for="m-status"> Marital status </label> </td>
+                        <td>
+                            <select name="m-status" id="m-status">
+                                <option value="unmarried"> unmarried </option>
+                                <option value="Married"> Married </option>
+                                <option value="Divorced"> Divorced </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="m-name"> Middle Name </label> </td>
+                        <td><input type="text" name="m-name" id="m-name"></td>
+                        <td> <label for="DOB"> Date Of Birth </label> </td>
+                        <td> <input type="date" name="DOB" id="DOB"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="s-name"> SureName </label> </td>
+                        <td><input type="text" name="s-name" id="s-name"></td>
+                        <td> <label for="email"> Email </label> </td>
+                        <td><input type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender"> Gender </label></td>
+                        <td>
+                            <select name="gender" id="gender">
+                                <option value="not-selected" disabled selected> -Select- </option>
+                                <option value="male"> Male </option>
+                                <option value="female"> Female </option>
+                                <option value="other"> Other </option>
+
+                            </select>
+                        </td>
+                        <td><label for="mob"> Mobile </label></td>
+                        <td> <input type="number" name="mob" id="mob"> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="community"> Community </label></td>
+                        <td>
+                            <select name="community" id="community">
+                                <option value="not-selected" disabled selected> -Select- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td><label for="a-mob"> Alternative Mobile </label></td>
+                        <td> <input type="number" name="a-mob" id="a-mob"> </td>
+                    </tr>
+                    <tr>
+                        <td id="color-red"> Resedential Address </td>
+                    </tr>
+                    <tr>
+                        <td><label for="h-num"> House Number </label></td>
+                        <td><input type="text" name="h-num" id="h-num"></td>
+                        <td><label for="mandal">Mandal</label></td>
+                        <td>
+                            <select name="mandal" id="mandal">
+                                <option value="0" selected disabled> -Select- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="street-name"> Street Name </label></td>
+                        <td><input type="text" name="street-name" id="street-name"></td>
+                        <td><label for="muncipality">Muncipality</label></td>
+                        <td>
+                            <select name="muncipality" id="muncipality">
+                                <option value="0" selected disabled> -Select- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="district">District</label></td>
+                        <td>
+                            <select name="district" id="district">
+                                <option value="0" selected disabled> -Select- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </td>
+                        <td><label for="village-town-city">Village/Town/City</label></td>
+                        <td>
+                            <select name="village-town-city" id="village-town-city">
+                                <option value="0" selected disabled> -Select- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="color-red"> Identification Mark </td>
+                    </tr>
+                    <tr>
+                        <td><label for="i-marks1">Identification Marks1</label></td>
+                        <td><input type="text" name="i-marks1" id="i-marks1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="i-marks2">Identification Marks2</label></td>
+                        <td><input type="text" name="i-marks2" id="i-marks2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="thumb-impression"> Thumb Impression</label></td>
+                        <td><input type="text" name="thumb-impression" id="thumb-impression"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="NOHF"> Name Of Healty Facility </label></td>
+                        <td>
+                            <input type="checkbox" name="NOHF" id="PHC">
+                            <label for="PHC"> PHC </label>
+                            <input type="checkbox" name="NOHF" id="CHC">
+                            <label for="CHC"> CHC </label>
+                            <input type="checkbox" name="NOHF" id="AH">
+                            <label for="AH"> AH </label>
+                            <input type="checkbox" name="NOHF" id="DHC">
+                            <label for="DHC"> DHC </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="color-red"> Enrollment Under Disability Condition </td>
+                    </tr>
+                    <tr>
+                        <td><label for="tha-major"> 1. Thalasemia Major </label></td>
+                        <td><input type="text" name="tha-major" id="tha-major"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sic-cell-dis"> 2. Sickel cell Disease </label></td>
+                        <td><input type="text" name="sic-cell-dis" id="sic-cell-dis"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sev-hem"> 3. Sever Hemophilia </label></td>
+                        <td><input type="text" name="sev-hem" id="sev-hem"></td>
+                    </tr>
+                </table>
+            </form>
+
+            <div class="subcription-div">
+                <form action="#" method="post" class="form2">
+                    <table class="s-table">
+                        <tr>
+                            <td><label for="name"> Name </label></td>
+                            <td><input type="text" name="name" id="name"></td>
+                            <td><label for="contact-num"> Contact Number </label></td>
+                            <td><input type="number" name="contact-num" id="contact-num"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="add"> Address </label></td>
+                            <td><input type="text" name="add" id="add"></td>
+                            <td><label for="s-email"> Email </label></td>
+                            <td><input type="email" name="s-email" id="s-email"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="right-item">
+                                <textarea name="" id="" cols="20" rows="10"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+/* responsive  */
+
+/* for header */
+
+@media(max-width:755px) {
+
+    .main-header,
+    .main-header div {
+        flex-direction: column;
+    }
+
+    .main-header div div {
+        flex-direction: row;
+    }
+
+    .main-header {
+        padding: 20px;
+    }
+}
+
+/* for body section */
+
+@media (max-width:1300px) {
+    .body-section {
+        width: calc(100vw);
+    }
+}
+
+/* for hero section  */
+
+@media (max-width:755px) {
+    .slide{
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+
+    .slider .slide .image-side {
+        width: 100vw;
+    }
+    .slider .slide .image-side img {
+        height: auto;
+        width: 80%;
+    }
+
+    .slider .slide .content-side {
+        margin-top: 20px;
+        width: 70vw;
+        gap: 10px;
+    }
+
+}
+
+/* for cards  */
+
+@media (max-width:1300px) {
+    .cards {
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:640px){
+    .cards .child-card{
+        width: 70vw;
+        height: auto;
+    }
+}

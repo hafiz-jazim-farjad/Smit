@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Toggle Menu  </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <style>
+        ::selection{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body id="body" oncontextmenu="return false">
+    <main>
+        <div class="logo">
+            <h1>Jazim</h1>
+        </div>
+
+        <div class="menu">
+            <div class="side-menu" id="side-menu">
+                <ul>
+                    <li>
+                        <button class="close-button" id="close-button" onclick="closeMenu()"> X </button>
+                    </li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">service</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </div>
+            <div id="open-button" class="open-button" onclick="openMenu()">☰</div>
+        </div>
+        <script>
+            function openMenu() {
+                document.getElementById('side-menu').style.height = "100vh";
+            }
+            function closeMenu() {
+                document.getElementById("side-menu").style.height = "0px";
+            }
+        </script>
+</body>
+
+</html>
