@@ -69,6 +69,16 @@ let mainData = [
         email: "pharetra.felis.eget@outlook.edu",
         company: "Ut Odio Vel Ltd",
     },
+    {
+        name: "Jazim",
+        email: "jazimzahid6@gmail.com",
+        company: "not defined",
+    },
+    {
+        name: "Masoom",
+        email: "jazim52946@gmail.com",
+        company: "not defined yet",
+    },
 
 ];
 
@@ -138,15 +148,24 @@ let customizedData = [
         email: "pharetra.felis.eget@outlook.edu",
         company: "Ut Odio Vel Ltd",
     },
+    {
+        name: "Jazim",
+        email: "jazimzahid6@gmail.com",
+        company: "not defined",
+    },
+    {
+        name: "Masoom",
+        email: "jazim52946@gmail.com",
+        company: "not defined yet",
+    },
+
 ];
 
 const search = () => {
     let searchValue = searchInput.value.toLowerCase();
     let filterArray = mainData.filter((items) => {
         return (
-            items.name.includes(searchValue) ||
-            items.email.includes(searchValue) ||
-            items.company.includes(searchValue)
+            items.name.includes(searchValue) || items.email.includes(searchValue) || items.company.includes(searchValue)
         );
     });
     customizedData = filterArray;
